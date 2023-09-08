@@ -10,6 +10,8 @@
 
   --bg-url: url(./assets/bg-mobile.jpg);
   --text-color: white;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
 }
 
 ul {
@@ -33,6 +35,7 @@ body {
   padding: 5.6rem 2.4rem 0rem;
 }
 
+/* PROFILE */
 .profile {
   text-align: center;
   padding: 2.4rem 0rem;
@@ -49,5 +52,39 @@ body {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  line-height: 24px;
+  line-height: 2.4rem;
+}
+
+/* SWITCH */
+.switch {
+  width: 6.4rem;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.switch button {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: white url(./assets/moon-stars.svg) no-repeat center;
+
+  border: none;
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.switch span {
+  display: block;
+  width: 6.4rem;
+  height: 2.4rem;
+
+  border-radius: 999.9rem;
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
