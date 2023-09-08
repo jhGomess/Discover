@@ -29,6 +29,10 @@
   --footer-hover: rgb(110, 8, 179);
 }
 
+.light .switch button {
+  animation: slide-in 200ms forwards;
+}
+
 ul {
   list-style: none;
 }
@@ -94,6 +98,8 @@ body {
   transform: translateY(-50%);
   top: 50%;
   left: 0;
+
+  animation: slide-back 200ms;
 }
 
 .switch span {
@@ -194,5 +200,24 @@ footer a:hover {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* ANIMATIONS */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
