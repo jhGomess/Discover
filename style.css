@@ -7,6 +7,8 @@
 
 :root {
   font-size: 62.5%;
+
+  --bg-url: url(./assets/bg-mobile.jpg);
 }
 
 ul {
@@ -15,4 +17,6 @@ ul {
 
 body {
   font-size: 1.6rem;
+
+  background: var(--bg-url) no-repeat center top / cover;
 }
