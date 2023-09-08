@@ -102,6 +102,10 @@ body {
   animation: slide-back 200ms;
 }
 
+.switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 .switch span {
   display: block;
   width: 6.4rem;
