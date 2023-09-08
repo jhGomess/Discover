@@ -12,6 +12,7 @@
   --text-color: white;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
 }
 
 ul {
@@ -58,7 +59,7 @@ body {
 /* SWITCH */
 .switch {
   width: 6.4rem;
-  margin: 0 auto;
+  margin: 0.8rem auto;
 
   position: relative;
 }
@@ -87,4 +88,39 @@ body {
   background: var(--surface-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+}
+
+/* LISTAS DE LINKS */
+ul {
+  padding: 2.4rem 0rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 2.4rem;
+
+  padding: 16px 24px;
+
+  border-radius: 8px;
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  transition: background 200ms, border 200ms;
+}
+
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
