@@ -13,7 +13,15 @@ function toggleMode() {
 
   if (html.classList.contains("light")) {
     img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute(
+      "alt",
+      "Foto light de Jhuan Gomes Calenta usando oculos e sorrindo."
+    )
   } else {
     img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute(
+      "alt",
+      "Foto de Jhuan Gomes Calenta em seu quarto vestindo uma camiseta preta."
+    )
   }
 }
